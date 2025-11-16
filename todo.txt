@@ -1,0 +1,115 @@
+Entrega 1: Juego Arcade desarrollado en Java utilizando la plataforma JavaFX
+Asignatura: Paradigmas de programación
+
+
+PROYECTO JUEGO ARCADE WORDVENTURE
+
+Tabla de contenido
+INTRODUCCION ....................................................................................................................................... 3
+Objetivo ................................................................................................................................................... 4
+Objetivos específicos ............................................................................................................................... 4
+¿De dónde salió su nombre? ¿Por qué nuestra propuesta es diferente? .................................................. 5
+Descripción detallada del juego ............................................................................................................... 6
+Diseño Grafico ......................................................................................................................................... 7
+Referencias bibliográficas ........................................................................................................................ 8
+
+POLITÉCNICO GRANCOLOMBIANO
+
+PROYECTO JUEGO ARCADE WORDVENTURE
+
+INTRODUCCION
+
+Actualmente aprender ingles para avanzar profesionalmente es esencial, pero es importante incorporar este tipo de
+aprendizaje desde para niños en la educación y en las actividades diarias. Según Healtlychildren.org “Usar más de un
+idioma también puede mejorar las habilidades generales de comunicación, alfabetización y matemáticas de un niño,
+y estos son solo algunos de los beneficios”. Lo anterior nos lleva a pensar en la manera mas sencilla de llegar a un
+tipo de usuarios jóvenes con perspectivas diferentes y rodeados de tecnología. El celular es un medio que nos puede
+ayudar para tal fin, en promedio una persona en promedio usa el celular entre 6 a 9 horas día, podríamos usar parte
+de este tiempo aprendido con el mismo medio de forma interactiva.
+Una de las plataformas más reconocidas en el aprendizaje de idiomas ha sido Duolingo, ofreciendo experiencias
+interactivas con los usuarios más jóvenes a través de gráficos, preguntas y respuestas, otras app ofrecen aprender
+cultura general, mientras que algunas fortalecen el conocimiento matemático y algunas incorporan métodos IA para
+interactuar verbalmente con el usuario, pero independientemente del método se han vuelto una herramienta útil
+para los usuarios deciden aprender de diferentes maneras y con tiempos más cómodos, ajustados a un estilo de vida
+más agotador y apresurado.
+
+POLITÉCNICO GRANCOLOMBIANO
+
+PROYECTO JUEGO ARCADE WORDVENTURE
+
+Objetivo
+Desarrollar un Juego Arcade con el lenguaje de programación Java usando el paquete grafico JavaFX, que presta
+el servicio de ayudar al usuario a aprender inglés, cultura general, ciencia, deportes y a realizar ejercicios de
+memoria.
+
+Objetivos específicos
+1.
+2.
+3.
+
+Ampliar el conocimiento en lenguajes Java.
+Fortalecer el uso de herramientas los paquetes gráficos de JavaFX
+Ayudar a usuarios aprender cultura general e idiomas de una forma más sencilla e interactiva.
+
+POLITÉCNICO GRANCOLOMBIANO
+
+PROYECTO JUEGO ARCADE WORDVENTURE
+
+¿De dónde salió su nombre? ¿Por qué nuestra propuesta es diferente?
+Worldventure es la mezcla entre world y adventure que en español traducen aventura de palabras. Este nombre
+representa la esencia del proyecto: un recorrido lleno de caminos y acertijos donde respuestas sobre temas de
+cultura general son la clave para avanzar. El término “adventure” simboliza el desafío mental y la exploración,
+mientras que “world” remite al aprendizaje de diferentes culturas. El nombre combina de forma creativa el
+aprendizaje de diferentes temas de cultura general (matemáticas, inglés, ciencia, deportes, entre otros) con la
+resolución de retos cognitivos, estimulando la memoria y el razonamiento lógico
+
+POLITÉCNICO GRANCOLOMBIANO
+
+PROYECTO JUEGO ARCADE WORDVENTURE
+
+Descripción detallada del juego
+Wordventure Worldventure es un juego educativo interactivo desarrollado en Java con interfaz gráfica en
+JavaFX, cuyo propósito será incentivar el aprendizaje de diferentes temas mientras estimula la memoria mediante
+acertijos, trivias y decisiones dentro de un laberinto virtual.
+El jugador se embarca en una aventura donde debe recorrer un laberinto lleno de retos relacionados con
+cultura general, matemáticas, inglés, ciencia, deportes y ejercicios de memoria. Cada desafío superado
+permite avanzar, otorgando puntos, pistas y acceso a caminos secretos, mientras que los errores pueden
+bloquear rutas o restar puntuación, añadiendo emoción y estrategia al recorrido.
+La dinámica del juego no solo entretiene, sino que promueve el aprendizaje activo, incorporando vocabulario,
+expresiones y curiosidades de manera visual, participativa y gamificada. Gracias a su diseño interactivo,
+Worldventure convierte el conocimiento en una aventura, donde cada decisión cuenta y cada respuesta acerca
+al jugador a la meta final: salir del laberinto con la mayor puntuación posible.
+
+1. Tipo de juego
+Worldventure es un juego educativo e interactivo tipo puzzle. Para personas mayores de 10 años interesadas en
+aprender mientras se divierten.
+
+2. Número de jugadores.
+El juego está diseñado principalmente para un jugador, sin embargo, existe la posibilidad de un modo competitivo
+local por turnos, donde varios jugadores compiten por puntos o tiempo.
+
+3. Reglas del juego.
+a. Ingresar el nombre del jugador y elegir nivel (Beginner, intermediate, Advanced).
+b. Moverse con las teclas ↑ ↓ ← →.
+c. Resolver acertijos o retos en inglés para avanzar.
+d. Las respuestas correctas otorgan puntos o desbloquean caminos.
+e. Las respuestas incorrectas bloquean el paso o restan puntos.
+f. El objetivo final es llegar al centro del laberinto con la mayor puntuación.
+
+POLITÉCNICO GRANCOLOMBIANO
+
+PROYECTO JUEGO ARCADE WORDVENTURE
+
+Diseño Grafico
+
+POLITÉCNICO GRANCOLOMBIANO
+
+PROYECTO JUEGO ARCADE WORDVENTURE
+
+Referencias bibliográficas
+(1) El videojuego como herramienta educativa.
+https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1665-61802016000200010
+
+POLITÉCNICO GRANCOLOMBIANO
+
+
