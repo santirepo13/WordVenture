@@ -1,1 +1,1 @@
-moduleSearchIndex = [{"l":"WordVenture"}];updateSearchResults();
+moduleSearchIndex = [{"l":"worldVenture"}];updateSearchResults();

@@ -1,0 +1,48 @@
+📦 SCRIPTS DE COMPILACIÓN - WordVenture
+========================================
+
+Hay 3 scripts para compilar según tus necesidades:
+
+1️⃣  compilar-simple.sh
+    - Compila SOLO código principal (sin GUI)
+    - MÁS RÁPIDO (~1-2 segundos)
+    - Ideal para versión consola
+    
+    $ bash compilar-simple.sh
+    $ java -cp bin app.Main
+
+2️⃣  compilar-todo.sh
+    - Compila código principal + GUI Swing
+    - RECOMENDADO para interfaz gráfica
+    - Sin pruebas unitarias
+    
+    $ bash compilar-todo.sh
+    $ java -cp bin gui.GameWindow
+
+3️⃣  compile-and-test.sh
+    - Compila TODO + pruebas unitarias
+    - Ejecuta 200+ test cases
+    - Requiere JUnit descargado
+    
+    $ bash compile-and-test.sh pruebas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚡ RECOMENDACIÓN RÁPIDA:
+
+Para probar rápidamente:
+$ bash compilar-todo.sh
+$ java -cp bin gui.GameWindow
+
+Para versión consola:
+$ bash compilar-simple.sh
+$ java -cp bin app.Main
+
+Para pruebas (necesita JUnit):
+$ bash compile-and-test.sh pruebas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Todos los scripts están listos para usar
+✅ No hay archivos duplicados
+✅ Interfaz Nivel está en niveles/ solamente

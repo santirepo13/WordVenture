@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"WordVenture","l":"app"},{"m":"WordVenture","l":"niveles"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"worldVenture","l":"app"},{"m":"worldVenture","l":"niveles"}];updateSearchResults();

@@ -1,0 +1,56 @@
+# Git Ignore para WordVenture
+# Ignora archivos de compilación, scripts y archivos temporales
+
+# ==================== Scripts ====================
+*.sh
+!doc/**
+!legal/**
+
+# ==================== Compilación ====================
+bin/
+*.class
+*.classpath
+
+# ==================== IDEs ====================
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ==================== Librerías Externas ====================
+lib/
+*.jar
+
+# ==================== Archivos Temporales ====================
+*.tmp
+~*
+*.bak
+*.log
+*.out
+
+# ==================== Archivos de Sistema ====================
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ==================== Documentación Generada ====================
+# (comentado: mantener doc/ en el repo)
+# doc/
+
+# ==================== Variables de Entorno ====================
+.env
+.env.local
+
+# ==================== Caché ====================
+*.cache
+.gradle/
+target/
