@@ -6,7 +6,8 @@
  * funcionen correctamente (los enlaces a las clases estarán activos).
  */
 module worldVenture {
-    requires java.desktop; // Para Swing/GUI
+    requires java.desktop;
+	requires junit; // Para Swing/GUI
 
     exports modelos;
     exports niveles;
