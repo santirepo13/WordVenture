@@ -9,6 +9,7 @@ package modelos;
  *   <li><b>INICIO</b>: punto de inicio del jugador</li>
  *   <li><b>META</b>: objetivo final del nivel</li>
  *   <li><b>PREGUNTA</b>: celda que contiene una pregunta</li>
+ *   <li><b>DATO</b>: celda con datos curiosos/educativos</li>
  * </ul>
  */
 public enum Celda {
@@ -31,5 +32,9 @@ public enum Celda {
     /**
      * Celda que contiene una pregunta.
      */
-    PREGUNTA;
+    PREGUNTA,
+    /**
+     * Celda con datos curiosos o información educativa.
+     */
+    DATO;
 }

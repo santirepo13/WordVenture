@@ -1,0 +1,66 @@
+# 🚀 COMANDOS RÁPIDOS - WordVenture
+
+## Lo Más Importante
+
+### Script Todo-en-Uno (RECOMENDADO)
+```bash
+bash setup-and-test.sh
+```
+Descarga JUnit, compila todo y ejecuta las pruebas.
+
+---
+
+## Comandos Individuales
+
+### 1. Descargar JUnit (primera vez)
+```bash
+mkdir -p lib
+curl -L -o lib/junit-4.13.2.jar https://github.com/junit-team/junit4/releases/download/r4.13.2/junit-4.13.2.jar
+curl -L -o lib/hamcrest-core-1.3.jar https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+```
+
+### 2. Compilar Código Principal
+```bash
+mkdir -p bin
+javac -d bin src/module-info.java src/modelos/*.java src/niveles/*.java src/validadores/Validador.java src/gui/*.java src/app/Main.java
+```
+
+### 3. Compilar Pruebas
+```bash
+javac -cp bin:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar -d bin src/modelos/*Test.java src/validadores/*Test.java src/niveles/*Test.java
+```
+
+### 4. Ejecutar Pruebas
+```bash
+java -cp bin:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore validadores.ValidadorTest modelos.PosicionTest modelos.DireccionTest modelos.CeldaTest modelos.PreguntaTest modelos.JugadorTest modelos.BancoPreguntasTest modelos.GeneradorMapasTest modelos.JuegoTest niveles.BasicoTest niveles.IntermedioTest niveles.AvanzadoTest niveles.LeyendaTest
+```
+
+### 5. Jugar - GUI
+```bash
+java -cp bin gui.GameWindow
+```
+
+### 6. Jugar - Consola
+```bash
+java -cp bin app.Main
+```
+
+---
+
+## Archivos de Referencia
+
+- **COMPILAR_Y_PROBAR.md** - Guía detallada de compilación
+- **COMANDOS.sh** - Referencia completa de comandos
+- **setup-and-test.sh** - Script automático
+
+---
+
+## Resumen Rápido por Caso de Uso
+
+| Objetivo | Comando |
+|----------|---------|
+| Todo automático | `bash setup-and-test.sh` |
+| Solo compilar | `mkdir -p bin && javac -d bin src/module-info.java src/**/*.java` |
+| Solo pruebas | Ver Paso 3 y 4 arriba |
+| Jugar (GUI) | `java -cp bin gui.GameWindow` |
+| Jugar (Consola) | `java -cp bin app.Main` |

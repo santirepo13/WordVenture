@@ -1,0 +1,45 @@
+✅ CAMBIOS FINALES REALIZADOS
+==============================
+
+1. ELIMINADO DUPLICADO
+   ❌ src/modelos/Nivel.java (ELIMINADO)
+   ✅ src/niveles/Nivel.java (MANTENIDO - único lugar)
+
+2. ACTUALIZADO
+   ✅ src/modelos/Juego.java
+      - Agregado: import niveles.Nivel;
+      - Ahora usa Nivel de niveles/ correctamente
+
+3. ACTUALIZADO Main.java
+   ✅ src/app/Main.java
+      - Ahora inicia GUI automáticamente
+      - Reemplaza consola con GameWindow
+      - Ejecuta: java -cp bin app.Main
+
+4. ARCHIVOS IGNORADOS EN GIT
+   ✅ .gitignore actualizado
+      - *.sh (todos los scripts shell)
+      - bin/ (compilados)
+      - lib/ (librerías externas)
+      - *.class, *.jar
+      - Archivos de IDE y temporales
+
+5. NUEVOS SCRIPTS
+   ✅ compilar-simple.sh - Compila sin GUI (rápido)
+   ✅ compilar-todo.sh - Compila con GUI (recomendado)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 AHORA PARA JUGAR:
+
+1. Compilar:
+   bash compilar-todo.sh
+
+2. Ejecutar GUI:
+   java -cp bin app.Main
+
+3. ¡A jugar!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ La interfaz gráfica debe aparecer automáticamente

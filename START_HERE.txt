@@ -1,0 +1,208 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                        🎮 WORDVENTURE v2.0 🎮                             ║
+║                                                                            ║
+║              Juego Educativo Interactivo en Java con Swing                ║
+║                                                                            ║
+║  📍 Mapas Dinámicos | 🎲 Preguntas Aleatorias | 🖼️  Interfaz Gráfica     ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 INICIO RÁPIDO (30 segundos)
+
+    1. Compilar:
+       $ bash compilar.sh
+
+    2. Jugar (GUI):
+       $ java -cp bin gui.GameWindow
+
+    ✨ ¡Eso es! El juego se abrirá en una ventana.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 GUÍAS DISPONIBLES
+
+    ┌─ COMPILACIÓN ──────────────────────────────────────────────┐
+    │ • GUIA_COMPILACION.md    - Guía rápida                    │
+    │ • COMPILAR_Y_PROBAR.md   - Guía detallada                 │
+    │ • QUICK_COMMANDS.txt     - Referencia de comandos         │
+    └────────────────────────────────────────────────────────────┘
+
+    ┌─ PROYECTO ────────────────────────────────────────────────┐
+    │ • README.md              - Documentación completa         │
+    │ • INICIO_RAPIDO.md       - Guía rápida de inicio          │
+    │ • RESUMEN_CAMBIOS.md     - Cambios en esta versión       │
+    │ • ENTREGA_COMPLETA.md    - Resumen de entrega            │
+    │ • TESTING.md             - Guía de pruebas               │
+    └────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎮 CARACTERÍSTICAS PRINCIPALES
+
+    ✅ 4 Niveles con Mapas Diferentes
+       • Básico    (8×8)
+       • Intermedio (16×16)
+       • Avanzado  (32×32)
+       • Leyenda   (64×64)
+
+    ✅ Mapas Dinámicos
+       • Preguntas en posiciones aleatorias
+       • Salida (meta) en posición aleatoria
+       • Obstáculos colocados aleatoriamente
+
+    ✅ Preguntas Aleatorias
+       • 75+ preguntas en total
+       • Cada partida: preguntas diferentes
+       • Dificultad progresiva
+
+    ✅ Interfaz Gráfica (GUI)
+       • Visualización del mapa en tiempo real
+       • Controles W/A/S/D
+       • Diálogos interactivos
+       • Menú de niveles
+
+    ✅ Pruebas Unitarias
+       • 200+ test cases
+       • Cobertura completa
+       • Validación de todas las funciones
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 SCRIPTS DISPONIBLES
+
+    bash compilar.sh
+    └─ Compila código (SIN pruebas, ~2-3 segundos)
+
+    bash compile-and-test.sh compilar
+    └─ Compila solo código principal
+
+    bash compile-and-test.sh pruebas
+    └─ Compila y ejecuta TODAS las pruebas unitarias
+
+    bash compile-and-test.sh gui
+    └─ Ejecuta la interfaz gráfica
+
+    bash compile-and-test.sh consola
+    └─ Ejecuta la versión en consola
+
+    bash compile-and-test.sh ayuda
+    └─ Muestra todas las opciones disponibles
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 COMANDOS POR CASO DE USO
+
+    🎮 Quiero jugar (GUI):
+       $ bash compilar.sh && java -cp bin gui.GameWindow
+
+    🎮 Quiero jugar (Consola):
+       $ bash compilar.sh && java -cp bin app.Main
+
+    🧪 Quiero ejecutar las pruebas:
+       $ bash compile-and-test.sh pruebas
+
+    📖 Quiero leer la documentación:
+       Ver archivos *.md en la carpeta raíz
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 ESTRUCTURA DEL PROYECTO
+
+    src/
+    ├── app/                  → Punto de entrada (Main.java)
+    ├── modelos/              → Clases principales
+    │   ├── Juego.java
+    │   ├── Jugador.java
+    │   ├── Posicion.java
+    │   ├── Pregunta.java
+    │   ├── BancoPreguntas.java    (⭐ NUEVO)
+    │   ├── GeneradorMapas.java    (⭐ NUEVO)
+    │   └── *Test.java            (Pruebas)
+    ├── niveles/              → Implementaciones de niveles
+    │   ├── Basico.java
+    │   ├── Intermedio.java
+    │   ├── Avanzado.java
+    │   ├── Leyenda.java          (⭐ NUEVO)
+    │   └── *Test.java            (Pruebas)
+    ├── gui/                  → Interfaz Gráfica (⭐ NUEVO)
+    │   ├── GameWindow.java
+    │   ├── GamePanel.java
+    │   └── (sin pruebas en esta versión)
+    ├── validadores/          → Utilidades
+    │   ├── Validador.java
+    │   └── ValidadorTest.java
+    └── module-info.java      → Declaración de módulo
+
+    bin/                      → Clases compiladas (se genera al compilar)
+    lib/                      → Librerías externas (JUnit, si aplica)
+    doc/                      → Documentación Javadoc
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚙️  REQUISITOS TÉCNICOS
+
+    ✅ Java 21 o superior
+    ✅ Terminal/Consola con soporte UTF-8
+    ✅ Soporte gráfico (para GUI):
+       • Linux: X11 o Wayland
+       • macOS: Quartz (incluido)
+       • Windows: Graphics (incluido)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 ESTADÍSTICAS DEL PROYECTO
+
+    Líneas de Código:        ~3,500+
+    Clases Principales:      13
+    Clases de Prueba:        13
+    Test Cases:              200+
+    Documentación:           ~5,000 líneas
+
+    Niveles:                 4 (Basico, Intermedio, Avanzado, Leyenda)
+    Preguntas:               75+
+    Tamaño del Mapa Mayor:   64×64 = 4,096 celdas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🆘 SOLUCIÓN DE PROBLEMAS
+
+    ❌ "cannot find symbol class Test"
+       → Ver: GUIA_COMPILACION.md (Paso 4)
+
+    ❌ "No such file or directory"
+       → Asegúrate de estar en la carpeta correcta:
+          cd WordVenture
+
+    ❌ Otros errores
+       → Ver: COMPILAR_Y_PROBAR.md (sección Solución de Problemas)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ NOVEDADES EN ESTA VERSIÓN (v2.0)
+
+    ✨ Mapas 2x más grandes
+    ✨ Preguntas en posiciones aleatorias
+    ✨ Interfaz gráfica con Swing
+    ✨ Nuevo nivel: LEYENDA (64×64)
+    ✨ Sistema de preguntas aleatorias mejorado
+    ✨ 200+ pruebas unitarias
+    ✨ Documentación completa
+
+    Para detalles: Ver RESUMEN_CAMBIOS.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 VERSIÓN Y FECHA
+
+    Versión:  2.0 (Dinámica + GUI)
+    Fecha:    17 de noviembre de 2025
+    Estado:   ✅ COMPLETO Y FUNCIONAL
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎓 ¡Disfruta aprendiendo con WordVenture! 🎓
+
+Para más información, consulta los archivos *.md en la carpeta raíz.

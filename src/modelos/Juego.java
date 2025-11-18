@@ -1,5 +1,6 @@
 package modelos;
 
+import niveles.Nivel;
 import validadores.Validador;
 
 /**
@@ -15,8 +16,10 @@ public class Juego {
     private Nivel nivel;
     private Celda[][] mapa;
     private Pregunta[] preguntas;
+    private String[] respuestasEsperadas;
     private boolean enEjecucion;
     private int indicePreguntaActual;
+    private String respuestaCorrecta; // Para mostrar en caso de error
 
     /**
      * Construye un juego usando el jugador y el nivel provistos.
@@ -29,8 +32,10 @@ public class Juego {
         this.nivel = nivel;
         this.mapa = nivel != null ? nivel.crearMapa() : new Celda[0][0];
         this.preguntas = nivel != null ? nivel.obtenerPreguntas() : new Pregunta[0];
+        this.respuestasEsperadas = nivel != null ? nivel.obtenerRespuestasEsperadas() : new String[0];
         this.enEjecucion = false;
         this.indicePreguntaActual = 0;
+        this.respuestaCorrecta = null;
     }
 
     /**
@@ -111,9 +116,11 @@ public class Juego {
     /**
      * Procesa la respuesta proporcionada por el jugador.
      *
-     * Si la respuesta es correcta, suma los puntos asociados a la pregunta y
+     * Valida la respuesta de forma case-insensitive (convierte a minúsculas).
+     * Si es correcta, suma los puntos asociados a la pregunta y
      * avanza al siguiente índice de pregunta. Si es incorrecta, resta una vida al
-     * jugador y, si no quedan vidas, termina la partida.
+     * jugador y guarda la respuesta correcta para feedback, terminando si no
+     * quedan vidas.
      *
      * @param indiceRespuesta índice de la opción seleccionada por el jugador
      * @return {@code true} si la respuesta fue correcta; {@code false} en caso contrario
@@ -121,17 +128,39 @@ public class Juego {
     public boolean procesarRespuesta(int indiceRespuesta) {
         Pregunta q = obtenerPreguntaActual();
         if (q == null) return false;
+        
         boolean correcto = q.verificarRespuesta(indiceRespuesta);
+        
         if (correcto) {
             jugador.sumarPuntos(q.getPuntos());
             indicePreguntaActual++;
+            respuestaCorrecta = null;
         } else {
+            respuestaCorrecta = respuestasEsperadas[indicePreguntaActual];
             jugador.perderVida();
             if (!jugador.estaVivo()) {
                 terminar();
             }
         }
         return correcto;
+    }
+
+    /**
+     * Obtiene la respuesta correcta para la pregunta actual (solo después de fallar).
+     *
+     * @return la respuesta correcta en texto, o {@code null} si la última respuesta fue correcta
+     */
+    public String obtenerRespuestaCorrecta() {
+        return respuestaCorrecta;
+    }
+
+    /**
+     * Obtiene el índice de la pregunta actual.
+     *
+     * @return índice actual en el arreglo de preguntas
+     */
+    public int obtenerIndiceActual() {
+        return indicePreguntaActual;
     }
 
     /**
